@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0c708e55-1f9f-430e-8c0f-4b9c4e4e4e4e" alt="Quantum Armor" width="300"/>
+</p>
+
+<h1 align="center">Quantum-Armor 🛡️</h1>
+
+<p align="center">
+  <a href="https://github.com/zencefilperisi/quantum-armor/stargazers"><img src="https://img.shields.io/github/stars/zencefilperisi/quantum-armor?style=social" alt="Stars"></a>
+  <a href="https://github.com/zencefilperisi/quantum-armor/releases"><img src="https://img.shields.io/github/v/release/zencefilperisi/quantum-armor?label=latest" alt="Release"></a>
+  <img src="https://img.shields.io/pypi/v/quantum-armor?color=blue" alt="PyPI">
+  <img src="https://img.shields.io/github/license/zencefilperisi/quantum-armor" alt="License">
+</p>
 # Quantum-Armor 🛡️
 
 [![PyPI version](https://badge.fury.io/py/quantum-armor.svg)](https://badge.fury.io/py/quantum-armor)
