@@ -30,7 +30,8 @@ quantum-armor scan .
 
 Desteklenen Geçişler
 
-```Klasik       → PQC Alternatifi        Durum
+```
+Klasik       → PQC Alternatifi        Durum
 RSA          CRYSTALS-Kyber           NIST Onaylı
 ECC/ECDSA    CRYSTALS-Dilithium       NIST Onaylı
 DH           CRYSTALS-Kyber/NTRU      Önerilen
