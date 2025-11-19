@@ -32,3 +32,14 @@ def scan(path):
 
 if __name__ == "__main__":
     cli()
+
+
+@click.command()
+@click.argument("path", type=click.Path(exists=True), default=".")
+def migrate(path):
+    """Automatically migrate RSA → Kyber (PQC)"""
+    from quantum_armor.migrators.rsa_to_kyber import RSAToKyberMigrator
+    migrator = RSAToKyberMigrator()
+    migrator.migrate_project(path)
+
+cli.add_command(migrate)

@@ -19,7 +19,6 @@ dependencies = [
 [project.scripts]
 quantum-armor = "quantum_armor.cli:cli"
 
-# BU KISIM SADECE 1 KEZ OLACAK – TEKRAR YOK!
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["quantum_armor*"]

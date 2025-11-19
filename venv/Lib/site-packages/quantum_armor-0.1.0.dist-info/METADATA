@@ -7,7 +7,9 @@ License: MIT
 Keywords: quantum,cryptography,security,pqc,post-quantum
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
+License-File: LICENSE
 Requires-Dist: click>=8.0
+Dynamic: license-file
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0c708e55-1f9f-430e-8c0f-4b9c4e4e4e4e" alt="Quantum Armor" width="300"/>
@@ -44,4 +46,8 @@ pip install quantum-armor
 quantum-armor scan /path/to/your/project
 <p align="center">
 ⭐ Star this repo if you're preparing for the quantum apocalypse! ⭐
+<<<<<<< HEAD
 </p>
+=======
+</p>
+>>>>>>> 7bed178eae2e6f779cd44214c3e722a7522b1d6f

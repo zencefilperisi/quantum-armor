@@ -33,4 +33,8 @@ pip install quantum-armor
 quantum-armor scan /path/to/your/project
 <p align="center">
 ⭐ Star this repo if you're preparing for the quantum apocalypse! ⭐
+<<<<<<< HEAD
 </p>
+=======
+</p>
+>>>>>>> 7bed178eae2e6f779cd44214c3e722a7522b1d6f
