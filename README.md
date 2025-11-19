@@ -29,10 +29,12 @@ quantum-armor scan .
 İlk testte kendi bağımlılıklarını taradı → pip, requests, click, urllib3 gibi paketlerde 23 tane kuantumla kırılabilir kullanım buldu!
 
 Desteklenen Geçişler
-Klasik,      → PQC Alternatifi        Durum
+
+```Klasik       → PQC Alternatifi        Durum
 RSA          CRYSTALS-Kyber           NIST Onaylı
 ECC/ECDSA    CRYSTALS-Dilithium       NIST Onaylı
 DH           CRYSTALS-Kyber/NTRU      Önerilen
+```
 
 
 Made with ❤️ by @zencefilperisi
