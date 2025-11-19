@@ -23,6 +23,8 @@
 ```bash
 pip install quantum-armor
 quantum-armor scan .
+```
+
 
 İlk testte kendi bağımlılıklarını taradı → pip, requests, click, urllib3 gibi paketlerde 23 tane kuantumla kırılabilir kullanım buldu!
 
