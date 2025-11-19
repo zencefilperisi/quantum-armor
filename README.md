@@ -31,3 +31,6 @@ Scan your codebase for vulnerable crypto (RSA, ECC) and get instant migration pa
 ```bash
 pip install quantum-armor
 quantum-armor scan /path/to/your/project
+<p align="center">
+⭐ Star this repo if you're preparing for the quantum apocalypse! ⭐
+</p>
