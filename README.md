@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/"C:\Users\User\Pictures\Screenshots\Ekran görüntüsü 2025-11-19 130537.png"" width="300"/>
+  <img src="https://github.com/user-attachments/assets/0c708e55-1f9f-430e-8c0f-4b9c4e4e4e4e" width="300"/>
   <br><br>
   <h1 align="center">Quantum-Armor</h1>
 </p>
@@ -13,16 +13,16 @@
   </a>
   <img src="https://img.shields.io/github/license/zencefilperisi/quantum-armor?color=blue" alt="License"/>
   <br><br>
-  <strong>One-click post-quantum cryptography audit tool</strong><br>
-  Even found 23 quantum-vulnerable usages in pip, requests and click itself!
+  <strong>Tek tıklamayla kuantum sonrası kriptografi denetim aracı</strong><br>
+  Hatta pip, requests ve click’ın kendisinde bile 23 kuantum açığı buldu!
 </p>
 
-## Why Quantum-Armor?
+## Neden Quantum-Armor?
 
-- Quantum computers will break RSA/ECC by ~2030 → start migrating today
-- Zero config, works instantly on any Python project
-- Detects RSA, ECC, DH usage (even in your venv!)
-- Suggests NIST-approved PQC replacements
+- Kuantum bilgisayarlar RSA/ECC’yi 2030’a kadar kıracak → bugün geçişe başla
+- Sıfır yapılandırma, her Python projesinde anında çalışır
+- RSA, ECC, DH kullanımını algılar (hatta venv’in içinde bile!)
+- NIST onaylı PQC alternatiflerini önerir (Kyber, Dilithium)
 
 ```bash
 pip install quantum-armor
