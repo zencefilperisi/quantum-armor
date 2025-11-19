@@ -1,0 +1,2 @@
+[console_scripts]
+quantum-armor = quantum_armor.cli:cli
