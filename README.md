@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0c708e55-1f9f-430e-8c0f-4b9c4e4e4e4e" width="300"/>
+  <img src="https://github.com/user-attachments/assets/"C:\Users\User\Pictures\Screenshots\Ekran görüntüsü 2025-11-19 130537.png"" width="300"/>
   <br><br>
   <h1 align="center">Quantum-Armor</h1>
 </p>
