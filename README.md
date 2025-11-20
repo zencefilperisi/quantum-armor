@@ -4,7 +4,7 @@ Quantum Armor is a migration tool that automatically converts legacy cryptograph
 
 ---
 
-## Features (2025 Update)
+## Features
 
 - **Multi-Algorithm Support:**  
   Finds and migrates legacy key generation code for RSA, ECC, DSA, and DH to post-quantum cryptography (PQC).
@@ -80,7 +80,7 @@ Use `js_migrator_demo.js` to migrate legacy JS cryptography code to PQC.
 Your project is now quantum-resistant!  
 With Quantum Armor, your code is secure against the threats of future quantum computers, and ready for adoption in any modern cryptographic workflow.
 
-👉 For more examples and documentation:
+For more examples and documentation:
 - [Web GUI](#web-gui)
 - [Rollback](#rollback)
 - [Test Script](#test-script)
