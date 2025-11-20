@@ -1,53 +1,95 @@
-<p align="center">
-  <h1 align="center">Quantum-Armor</h1>
-</p>
+# Quantum Armor
 
-<p align="center">
-  <a href="https://github.com/zencefilperisi/quantum-armor/stargazers">
-    <img src="https://img.shields.io/github/stars/zencefilperisi/quantum-armor?style=social" alt="Stars"/>
-  </a>
-  <img src="https://img.shields.io/pypi/v/quantum-armor?color=success&label=pypi" alt="PyPI"/>
-  <img src="https://img.shields.io/github/license/zencefilperisi/quantum-armor?color=blue" alt="License"/>
-  <br><br>
-  <strong>Tek tıklamayla kuantum sonrası kriptografi denetim aracı</strong><br>
-  Hatta pip, requests ve click paketlerinin içinde bile 23 kuantum açığı buldu!
-</p>
+Quantum Armor, klasik şifreleme algoritmalarını (RSA, ECC, DSA, DH gibi) tek komutla, NIST onaylı kuantum-dirençli kriptografiye (Kyber/ML-KEM veya Dilithium) **otomatik** olarak dönüştüren bir migrasyon aracıdır. Legacy Python (& JS) projeleriniz, Quantum Armor ile kodunuzu manuel güncellemeden bir anda geleceğe uyumlu hale gelir.
 
 ---
 
-## 🚀 Neden Quantum-Armor?
+## 🚀 Özellikler (2025 Güncel Sürüm!)
 
-- 2030’a kadar RSA ve ECC kırılacak → geçiş bugün başlıyor  
-- Sıfır yapılandırma, her Python projesinde anında çalışır  
-- RSA, ECC, DH kullanımını algılar (hatta kendi venv’inde bile!)  
-- NIST onaylı PQC alternatiflerini önerir (Kyber, Dilithium, Falcon)
+- **Çoklu Algoritma Desteği:**  
+  Klasik RSA, ECC, DSA ve DH key generation kodlarını yakalayıp PQC’ye dönüştürür.
+- **Kullanıcı Seçimli PQC (Komut Satırı veya GUI):**  
+  Otomatik veya interaktif olarak Kyber (ML-KEM), Dilithium gibi algoritma seçimi ile migrasyon.
+- **Otomatik Migre & JSON Raporlama:**  
+  Migrasyon sonrası dosya değişiklikleri ve yeni algoritmalar JSON raporu olarak saklanır.
+- **Rollback (Geri Al) Özelliği:**  
+  Her değişimden önce otomatik dosya yedeği alınır. Tek komutla tüm dosyaları eski haline döndürebilirsin.
+- **Test Scripti ile Kontrol:**  
+  Migrasyon sonrası dosyaların PQC uyumlu ve doğru güncellenip güncellenmediği otomatik test edilir.
+- **Multi-Language Demo:**  
+  Python dışında, örnek JavaScript dosyaları için de RSA → Kyber/Dilithium dönüşüm desteği.
+- **Basit Web Arayüzü (Flask GUI):**  
+  Proje dizinini ve algoritmayı seçip kod migrasyonunu web üzerinden gerçekleştirebilirsin.
+- **Kolay Entegrasyon:**  
+  CLI ve GUI ile projelerde anında kullanılabilir ve genişletilebilir.
 
 ---
 
-## 📦 Kurulum
+## 🔧 Kurulum
 
 ```bash
-pip install quantum-armor
+pip install kyber-py dilithium-py flask
 ```
-## Kullanım
+
+---
+
+## ⚡ Hızlı Kullanım (CLI)
+
 ```bash
-quantum-armor scan /path/to/your/project
-## veya bulunduğun dizini taramak için
-quantum-armor scan .
+python quantum_armor/migrators/main.py
 ```
+- Size algoritma sorar: Kyber veya Dilithium seçin.
+- Otomatik migrasyon başlar: Tüm projede klasik anahtar üretimi PQC ile değişir.
+- Detaylar `migration_report.json` dosyasına kaydedilir.
 
-<p align="center"> ⭐ Star this repo if you're preparing for the quantum apocalypse! ⭐ </p>
-
-## İlk Test Sonuçları
-
-İlk testte kendi bağımlılıklarını taradı → pip, requests, click, urllib3 gibi paketlerde
-23 tane kuantumla kırılabilir kriptografik kullanım tespit etti!
-
-## Desteklenen Geçişler
+**Rollback:**
 ```bash
-Klasik       → PQC Alternatifi        Durum
-RSA          CRYSTALS-Kyber           NIST Onaylı
-ECC/ECDSA    CRYSTALS-Dilithium       NIST Onaylı
-DH           CRYSTALS-Kyber/NTRU      Önerilen
+python quantum_armor/migrators/main.py rollback
 ```
-<p align="center"> Made with ❤️ by @zencefilperisi </p> ```
+Değişen dosyalar eski haline döner.
+
+---
+
+## 🌐 Web GUI
+```bash
+python quantum_armor/migrators/web_gui.py
+```
+- Tarayıcıdan (`localhost:5000`) projeni ve algoritmayı seç, migrasyonu başlat.
+
+---
+
+## 🧪 Test Scripti
+Migrasyonun başarıyla gerçekleşip gerçekleşmediğini otomatik kontrol eder:
+```bash
+python quantum_armor/migrators/test_migration.py
+```
+
+---
+
+## 🕹️ JavaScript Demo
+`js_migrator_demo.js` ile JS kodlarında da legacy → PQC dönüşümü örneği.
+
+---
+
+## 📚 Sonuç
+
+Artık projen kuantum direncine hazır!  
+Quantum Armor ile kodun hem güvenli, hem de geleceğin kriptografisine uyumlu.
+
+👉 Daha fazla örnek ve dokümantasyon için:  
+- [Web Arayüzü](#web-gui)
+- [Rollback](#rollback)
+- [Test Scripti](#test-scripti)
+- [Multi-language Demo](#multi-language-demo)
+
+---
+
+## 👩‍💻 Katkı ve Destek
+
+Her türlü iyileştirme, yeni algoritma ekleme ve PR’a açık!  
+Soruların için: [issues sekmesine](https://github.com/zencefilperisi/quantum-armor/issues) bakabilirsin.
+
+---
+
+_Tüm NIST onaylı algoritma kütüphaneleri ve modern best-practices ile uyumludur.  
+Quantum Armor, legacy kodun geleceğe taşınmasında lider bir çözümdür._
