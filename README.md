@@ -4,7 +4,7 @@ Quantum Armor is a migration tool that automatically converts legacy cryptograph
 
 ---
 
-## 🚀 Features (2025 Update)
+## Features (2025 Update)
 
 - **Multi-Algorithm Support:**  
   Finds and migrates legacy key generation code for RSA, ECC, DSA, and DH to post-quantum cryptography (PQC).
@@ -25,7 +25,7 @@ Quantum Armor is a migration tool that automatically converts legacy cryptograph
 
 ---
 
-## 🔧 Installation
+## Installation
 
 ```bash
 pip install kyber-py dilithium-py flask
@@ -33,7 +33,7 @@ pip install kyber-py dilithium-py flask
 
 ---
 
-## ⚡ Quick Usage (CLI)
+## Quick Usage (CLI)
 
 ```bash
 python quantum_armor/migrators/main.py
@@ -50,7 +50,7 @@ Restores all changed files from backups.
 
 ---
 
-## 🌐 Web GUI
+## Web GUI
 
 ```bash
 python quantum_armor/migrators/web_gui.py
@@ -60,7 +60,7 @@ python quantum_armor/migrators/web_gui.py
 
 ---
 
-## 🧪 Test Script
+## Test Script
 
 Automatically checks and validates migrated code:
 ```bash
@@ -69,13 +69,13 @@ python quantum_armor/migrators/test_migration.py
 
 ---
 
-## 🕹️ JavaScript Demo
+## JavaScript Demo
 
 Use `js_migrator_demo.js` to migrate legacy JS cryptography code to PQC.
 
 ---
 
-## 📚 Summary
+## Summary
 
 Your project is now quantum-resistant!  
 With Quantum Armor, your code is secure against the threats of future quantum computers, and ready for adoption in any modern cryptographic workflow.
@@ -88,7 +88,7 @@ With Quantum Armor, your code is secure against the threats of future quantum co
 
 ---
 
-## 👩‍💻 Contribution & Support
+## Contribution & Support
 
 Contributions, improvements, and new algorithms are welcome!  
 For questions, see [issues page](https://github.com/zencefilperisi/quantum-armor/issues).
