@@ -1,31 +1,31 @@
 # Quantum Armor
 
-Quantum Armor, klasik şifreleme algoritmalarını (RSA, ECC, DSA, DH gibi) tek komutla, NIST onaylı kuantum-dirençli kriptografiye (Kyber/ML-KEM veya Dilithium) **otomatik** olarak dönüştüren bir migrasyon aracıdır. Legacy Python (& JS) projeleriniz, Quantum Armor ile kodunuzu manuel güncellemeden bir anda geleceğe uyumlu hale gelir.
+Quantum Armor is a migration tool that automatically converts legacy cryptographic code (RSA, ECC, DSA, DH, etc.) to NIST-approved quantum-resistant algorithms (Kyber/ML-KEM or Dilithium) with a single command. With Quantum Armor, your Python (& JS) projects become future-proof without manual code updates—just migrate and go!
 
 ---
 
-## 🚀 Özellikler (2025 Güncel Sürüm!)
+## 🚀 Features (2025 Update)
 
-- **Çoklu Algoritma Desteği:**  
-  Klasik RSA, ECC, DSA ve DH key generation kodlarını yakalayıp PQC’ye dönüştürür.
-- **Kullanıcı Seçimli PQC (Komut Satırı veya GUI):**  
-  Otomatik veya interaktif olarak Kyber (ML-KEM), Dilithium gibi algoritma seçimi ile migrasyon.
-- **Otomatik Migre & JSON Raporlama:**  
-  Migrasyon sonrası dosya değişiklikleri ve yeni algoritmalar JSON raporu olarak saklanır.
-- **Rollback (Geri Al) Özelliği:**  
-  Her değişimden önce otomatik dosya yedeği alınır. Tek komutla tüm dosyaları eski haline döndürebilirsin.
-- **Test Scripti ile Kontrol:**  
-  Migrasyon sonrası dosyaların PQC uyumlu ve doğru güncellenip güncellenmediği otomatik test edilir.
+- **Multi-Algorithm Support:**  
+  Finds and migrates legacy key generation code for RSA, ECC, DSA, and DH to post-quantum cryptography (PQC).
+- **User-Selectable PQC Algorithms (CLI & GUI):**  
+  Choose Kyber (ML-KEM), Dilithium, or others interactively for migration.
+- **Automatic Migration & JSON Reporting:**  
+  Every change is reported and documented in a JSON migration report.
+- **Rollback (Backup/Restore):**  
+  Automatically backs up files before migration; revert to originals with a single command.
+- **Migration Test Script:**  
+  Automatically tests and validates successful migration and PQC compliance.
 - **Multi-Language Demo:**  
-  Python dışında, örnek JavaScript dosyaları için de RSA → Kyber/Dilithium dönüşüm desteği.
-- **Basit Web Arayüzü (Flask GUI):**  
-  Proje dizinini ve algoritmayı seçip kod migrasyonunu web üzerinden gerçekleştirebilirsin.
-- **Kolay Entegrasyon:**  
-  CLI ve GUI ile projelerde anında kullanılabilir ve genişletilebilir.
+  Python and JavaScript support—see examples for legacy → PQC transformation in both.
+- **Simple Web GUI (Flask):**  
+  Migrate your project from a user-friendly web interface.
+- **Easy Integration:**  
+  Use from the command line or integrate as a module for your custom automations.
 
 ---
 
-## 🔧 Kurulum
+## 🔧 Installation
 
 ```bash
 pip install kyber-py dilithium-py flask
@@ -33,33 +33,36 @@ pip install kyber-py dilithium-py flask
 
 ---
 
-## ⚡ Hızlı Kullanım (CLI)
+## ⚡ Quick Usage (CLI)
 
 ```bash
 python quantum_armor/migrators/main.py
 ```
-- Size algoritma sorar: Kyber veya Dilithium seçin.
-- Otomatik migrasyon başlar: Tüm projede klasik anahtar üretimi PQC ile değişir.
-- Detaylar `migration_report.json` dosyasına kaydedilir.
+- Choose your preferred PQC algorithm: Kyber or Dilithium.
+- Automatically migrates all legacy cryptography code in your project.
+- Detailed changes are logged to `migration_report.json`.
 
 **Rollback:**
 ```bash
 python quantum_armor/migrators/main.py rollback
 ```
-Değişen dosyalar eski haline döner.
+Restores all changed files from backups.
 
 ---
 
 ## 🌐 Web GUI
+
 ```bash
 python quantum_armor/migrators/web_gui.py
 ```
-- Tarayıcıdan (`localhost:5000`) projeni ve algoritmayı seç, migrasyonu başlat.
+- Open your browser at `localhost:5000`.
+- Select project path and PQC algorithm, and start migration from the web interface.
 
 ---
 
-## 🧪 Test Scripti
-Migrasyonun başarıyla gerçekleşip gerçekleşmediğini otomatik kontrol eder:
+## 🧪 Test Script
+
+Automatically checks and validates migrated code:
 ```bash
 python quantum_armor/migrators/test_migration.py
 ```
@@ -67,29 +70,29 @@ python quantum_armor/migrators/test_migration.py
 ---
 
 ## 🕹️ JavaScript Demo
-`js_migrator_demo.js` ile JS kodlarında da legacy → PQC dönüşümü örneği.
+
+Use `js_migrator_demo.js` to migrate legacy JS cryptography code to PQC.
 
 ---
 
-## 📚 Sonuç
+## 📚 Summary
 
-Artık projen kuantum direncine hazır!  
-Quantum Armor ile kodun hem güvenli, hem de geleceğin kriptografisine uyumlu.
+Your project is now quantum-resistant!  
+With Quantum Armor, your code is secure against the threats of future quantum computers, and ready for adoption in any modern cryptographic workflow.
 
-👉 Daha fazla örnek ve dokümantasyon için:  
-- [Web Arayüzü](#web-gui)
+👉 For more examples and documentation:
+- [Web GUI](#web-gui)
 - [Rollback](#rollback)
-- [Test Scripti](#test-scripti)
+- [Test Script](#test-script)
 - [Multi-language Demo](#multi-language-demo)
 
 ---
 
-## 👩‍💻 Katkı ve Destek
+## 👩‍💻 Contribution & Support
 
-Her türlü iyileştirme, yeni algoritma ekleme ve PR’a açık!  
-Soruların için: [issues sekmesine](https://github.com/zencefilperisi/quantum-armor/issues) bakabilirsin.
+Contributions, improvements, and new algorithms are welcome!  
+For questions, see [issues page](https://github.com/zencefilperisi/quantum-armor/issues).
 
 ---
 
-_Tüm NIST onaylı algoritma kütüphaneleri ve modern best-practices ile uyumludur.  
-Quantum Armor, legacy kodun geleceğe taşınmasında lider bir çözümdür._
+_All algorithms are NIST-compliant. Quantum Armor is the leading tool for future-proofing your legacy cryptography code._
