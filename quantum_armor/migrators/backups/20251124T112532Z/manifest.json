@@ -1,0 +1,23 @@
+{
+  "created_at": "20251124T112532Z",
+  "files": [
+    {
+      "original_path": "C:\\Users\\User\\Desktop\\quantum-armor\\tests\\legacy_pycryptodome.py",
+      "backup_path": "C:\\Users\\User\\Desktop\\quantum-armor\\quantum_armor\\migrators\\backups\\20251124T112532Z\\legacy_pycryptodome.py",
+      "sha256": "169de3097a4b399a945395e85143cc8edc445a6d05bd4eae7c2eb2ee7b025dc6",
+      "size": 92
+    },
+    {
+      "original_path": "C:\\Users\\User\\Desktop\\quantum-armor\\tests\\legacy_rsa.py",
+      "backup_path": "C:\\Users\\User\\Desktop\\quantum-armor\\quantum_armor\\migrators\\backups\\20251124T112532Z\\legacy_rsa.py",
+      "sha256": "585b4ace46ef172707fa222158a39b1a52ec9ef6ba58a9345911e31534797846",
+      "size": 150
+    },
+    {
+      "original_path": "C:\\Users\\User\\Desktop\\quantum-armor\\tests\\ssh_paramiko.py",
+      "backup_path": "C:\\Users\\User\\Desktop\\quantum-armor\\quantum_armor\\migrators\\backups\\20251124T112532Z\\ssh_paramiko.py",
+      "sha256": "ed5f75b7bb0579d745c30bdd772ca895341f8b20bb03488c04ab644cbf3f1b1a",
+      "size": 55
+    }
+  ]
+}
